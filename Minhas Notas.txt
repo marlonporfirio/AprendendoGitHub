@@ -181,6 +181,19 @@ apagar do server comando > git push origin --delete nome da branch
 
 
 
+Resolvendo Conflitos
+no caso de alteração de um arquivo em um branch na máquina e uma alteração direto no arquio no github no mmomento em que você tentar enviar as alterações locais para o servidor vai dar erro(conflito) >> para resolver primeiro é necessário executar um git pull (baixar as alterações do servidor na máquina) abrir o arquivo local e comparar com o do servidor >> ir no arquivo local e deixar a versão que será usada e salvar o arquivo retornar ao GitBash e comandar git status
++ git add --all + git commit -m "comentátios" + git push(envia para o servidor)
 
+
+-----------------------
+*Ferrametas gráficas para resolução de Conflitos
+KDiff3 - Home
+configurando o KDIFF no git como ferramenta de resolução de conflitos
+comando no gitbash >>> git config --global --add merger.tool kdiff3
+agora informar o caminho do executável >> git config --global --add mergertool.kdff3.path "caminho do executável"
+executar o comando >> git mergertool
+
+-----------------------------------
 
 
