@@ -94,4 +94,5 @@ criar uma pasta no pc onde vai clonar o diretório do site e dar na pasta um git 
 depois usar git clone + url do git hub
 git add nome do arquivo
 git commit -m "Algum comentário"
+git push
 
