@@ -5,94 +5,95 @@ git bash linha de comando com cores
 mesma coisa no cmd
 
 ---------------------------------------
-conceitos teÛricos no Git
+conceitos te√≥ricos no Git
 
-seu projeto fica na sua m·quina local
-seu reposiÛrio fica na m·quina 
-copia local na sua m·quina
-v·rias inst‚ncias de backup 
-git È distribuÌdo
+seu projeto fica na sua m√°quina local
+seu reposi√≥rio fica na m√°quina 
+copia local na sua m√°quina
+v√°rias inst√¢ncias de backup 
+git √© distribu√≠do
 
-Branch (ramo) - cÛpia do seu projeto em ramo
-mundanÁas locais sem afetar colaboradores
+Branch (ramo) - c√≥pia do seu projeto em ramo
+mundan√ßas locais sem afetar colaboradores
 
-conceito de distribuiÁ„o
-Merge - junta as alteraÁıes
+conceito de distribui√ß√£o
+Merge - junta as altera√ß√µes
 
-configuraÁ„o do usu·rio
-j· tenho
+configura√ß√£o do usu√°rio
+j√° tenho
 marlonporfirio
 
-Criando um repositÛrio local > git init
+Criando um reposit√≥rio local > git init
 
-master È um versionamento criado por padr„o pelo git 
+master √© um versionamento criado por padr√£o pelo git 
 
 
 Versionmento de arquivos
 informa ao git que esse arquivo tem que ser rastreado
-comando para ver alteraÁ„o no arquivo > git status
-untracked files > arquivos n„o rastreados
+comando para ver altera√ß√£o no arquivo > git status
+untracked files > arquivos n√£o rastreados
 
-comando commit > quando vocÍ acaba uma alteraÁ„o e quer salvar o estado daquel alteraÁ„o quando vocÍ faz um commit e rastreia a alteraÁ„o
+comando commit > quando voc√™ acaba uma altera√ß√£o e quer salvar o estado daquel altera√ß√£o quando voc√™ faz um commit e rastreia a altera√ß√£o
 
 comando git add > adiciona um arquivo para ser rastreado
 
-existem mudanÁas para ser comitada(Changes to be committed)
+existem mudan√ßas para ser comitada(Changes to be committed)
 
 comando para inserir todos os arquivos para o git rastrear > git add --all
 
-comando de commit > git commit -m "Algum coment·rio"
+comando de commit > git commit -m "Algum coment√°rio"
 
-comand para desfazer alteraÁıes em v·rios arquivos ao mesmo tempo > git reset --hard
+comand para desfazer altera√ß√µes em v√°rios arquivos ao mesmo tempo > git reset --hard
 
 
-HistÛrico de alteraÁıes 
+Hist√≥rico de altera√ß√µes 
 
-changes not staged for commit > existem mudanÁas que n„o est„o preparadas para ser comitada
+changes not staged for commit > existem mudan√ßas que n√£o est√£o preparadas para ser comitada
 
-* apÛs mudanÁas antes de comitar È necess·rio fazer um git add 
-comando para ver o histÛrico de alteraÁıes em funÁ„o da existÍncia v·rios arquivos > git log
+* ap√≥s mudan√ßas antes de comitar √© necess√°rio fazer um git add 
+comando para ver o hist√≥rico de altera√ß√µes em fun√ß√£o da exist√™ncia v√°rios arquivos > git log
  
-para olhar o que foi alterado > git diff e passar como par‚metro um ou mais commits
+para olhar o que foi alterado > git diff e passar como par√¢metro um ou mais commits
 
-comando para ver mais a fundo as alteraÁıes do histÛrico > git log --stat
+comando para ver mais a fundo as altera√ß√µes do hist√≥rico > git log --stat
 
 Usando os commits anteriores
-voltar para vers„o anterior
+voltar para vers√£o anterior
 comando git checkout + commit
 para voltar a RED > git log depois o comando git checkout + o nome da branch > 
 
-estado RED > uma foto do ˙ltimo commit 
+estado RED > uma foto do √∫ltimo commit 
 
 Para limpar a Tela comando > clear
 
-*Como voltar a uma vers„o anterior de um ARQUIVO comando > git checkout + nome do arquivo
+*Como voltar a uma vers√£o anterior de um ARQUIVO comando > git checkout + nome do arquivo
 
-Desfazendo alteraÁıes em arquivos n„o rastreados
+Desfazendo altera√ß√µes em arquivos n√£o rastreados
 comando > git clean -f (apaga todos os arquivos)
 comando >  antes de apagar mostra uma lista > git clean -n
 comando >  apagar apenas um arquivo > git clean -i
 
 Ignorando Arquivos
-criar o arquivo no Windows com a extens„o.gitignore. para arquivos n„o rastreados
+criar o arquivo no Windows com a extens√£o.gitignore. para arquivos n√£o rastreados
 
-para arquivos j· rastreados > esse comando remove todos os arquivos do rastreamento > git rm -r --cached .
+para arquivos j√° rastreados > esse comando remove todos os arquivos do rastreamento > git rm -r --cached .
 	
 
-*Clonando repositÛrio
+*Clonando reposit√≥rio
 comando git clone + o caminho
 
-You appear to have cloned an empty repository > endereÁo informado estava errado
+You appear to have cloned an empty repository > endere√ßo informado estava errado
 
-*IntroduÁ„o ao Git Hub
-*Clonando RepositÛrios e Versıes Anteriores
-como enviar as alteraÁıes para o servidor(nesse caso GitHub)
-comando git push (envia todos os commits da minha m·quina para o servidor)
+*Introdu√ß√£o ao Git Hub
+*Clonando Reposit√≥rios e Vers√µes Anteriores
+como enviar as altera√ß√µes para o servidor(nesse caso GitHub)
+comando git push (envia todos os commits da minha m√°quina para o servidor)
 
 antes do Git Push
-criar uma pasta no pc onde vai clonar o diretÛrio do site e dar na pasta um git init
+criar uma pasta no pc onde vai clonar o diret√≥rio do site e dar na pasta um git init
 depois usar git clone + url do git hub
 git add nome do arquivo
-git commit -m "Algum coment·rio"
+git commit -m "Algum coment√°rio"
 git push
 
+Arquivo alterado no diretamente no site do GitHub
