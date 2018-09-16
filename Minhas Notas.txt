@@ -11,6 +11,8 @@ seu projeto fica na sua máquina local
 seu reposiório fica na máquina 
 copia local na sua máquina
 várias instâncias de backup 
+
+
 git é distribuído
 
 Branch (ramo) - cópia do seu projeto em ramo
@@ -96,3 +98,5 @@ git add nome do arquivo
 git commit -m "Algum comentário"
 git push
 
+------------------
+Baixar a última versão do reposiório
