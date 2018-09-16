@@ -5,7 +5,7 @@ git bash linha de comando com cores
 mesma coisa no cmd
 
 ---------------------------------------
-conceitos te√≥ricos no Git
+conceitos teoricos no Git
 
 <<<<<<< HEAD
 seu projeto fica na sua m·quina local
@@ -23,19 +23,19 @@ v√°rias inst√¢ncias de backup
 git √© distribu√≠do
 >>>>>>> e54637e7c0702787697a8566eff719f2231636ff
 
-Branch (ramo) - c√≥pia do seu projeto em ramo
+Branch (ramo) - copia do seu projeto em ramo
 mundan√ßas locais sem afetar colaboradores
 
-conceito de distribui√ß√£o
-Merge - junta as altera√ß√µes
+conceito de distribuicao
+Merge - junta as alteracoes
 
-configura√ß√£o do usu√°rio
-j√° tenho
+configuracao do usuario
+ja tenho
 marlonporfirio
 
 Criando um reposit√≥rio local > git init
 
-master √© um versionamento criado por padr√£o pelo git 
+master e um versionamento criado por padrao pelo git 
 
 
 Versionmento de arquivos
@@ -112,3 +112,88 @@ Baixar a ˙ltima vers„o do reposiÛrio
 =======
 Arquivo alterado no diretamente no site do GitHub
 >>>>>>> e54637e7c0702787697a8566eff719f2231636ff
+
+para baixar a ˙ltima vers„o dos commits comando > git pull
+
+
+---------------
+
+IntroduÁ„o ao Bitbucket > igual ao GitHub, porÈm permite com uma conta gratuita criar repositÛrios privados
+
+
+--------------
+Conceitos B·sicos de Branch
+
+brancch master È o ramo principal que armazena nosso software
+geralmente tem uma branch chamada develop(onde as novas funcionalidades do site/app/sf È desenvolvida) uma cÛpia da master 
+
+--------------------------
+
+Criando Branch
+comando > git branch + nome da branch
+para mudar de branch > comando > git checkout + nome da branch
+para enviar para o server > git push
+ 
+erro > n„o existe nenhum branch no git com esse nome
+fazer o seguinte comando > git push -u origin + nonme da branch
+
+
+Renomeando Branchs
+primeira parte mudar o nome da branch local
+acessar a branch > comando > git checkout -b + novo nome
+git branch -m + nome
+ 
+comando para alterar de branch >  git checkout + nome da branch
+
+na branch usar o comando >  git branch -m nome atual + novo nome
+
+* para trocar uma branch em um server o git exige que ela seja apagada e podem ter alguÈm trabalhando na branch dessa forma faÁa o comando > git pull
+
+agora renomar a branch > comando > git branch -m + nome 
+comando > git push origin --delete nome da branch antiga
+agora colocar a nova branch no server > comando > git push -u origin + nome da nova branch
+*AtenÁ„o se a branch estiver sendo usada por uma ou mais pessoas no momento que elas fizeram um push o git vai dar erro porque n„o vai mais existir a branch no servidor
+
+--------------------------
+Rastreando Branch
+no momento de enviar a branch para o servidor sempre usar o comando >  git push --u origin + nome da branch (isso vai criar uma branch rastreada)
+
+------------------------------
+Mesclando alteraÁıes > git merger
+vai mesclar as alteraÁıes de uma branch com a outra
+
+comando git merge + nome da branch que eu desejo trazer as alteraÁıes para a master
+
+sempre usar git status e se informar que existem commits na pasta local usar o comando > git push para enviar ao server 
+
+*Como removar uma branch do pc
+comando > git branch -d + nome da branch	
+
+apÛs remover local para remover no server
+comando para listar > git branch -r
+comando para listar as locais e remotas > git branch -a
+para baixar novamente a branch > git checkout + nome da branch
+-----------------------------------
+
+*Remover branchs remotos
+sempre fazer o commit ao trocar de branch
+apagar do server comando > git push origin --delete nome da branch
+
+
+
+Resolvendo Conflitos
+no caso de alteraÁ„o de um arquivo em um branch na m·quina e uma alteraÁ„o direto no arquio no github no mmomento em que vocÍ tentar enviar as alteraÁıes locais para o servidor vai dar erro(conflito) >> para resolver primeiro È necess·rio executar um git pull (baixar as alteraÁıes do servidor na m·quina) abrir o arquivo local e comparar com o do servidor >> ir no arquivo local e deixar a vers„o que ser· usada e salvar o arquivo retornar ao GitBash e comandar git status
++ git add --all + git commit -m "coment·tios" + git push(envia para o servidor)
+
+
+-----------------------
+*Ferrametas gr·ficas para resoluÁ„o de Conflitos
+KDiff3 - Home
+configurando o KDIFF no git como ferramenta de resoluÁ„o de conflitos
+comando no gitbash >>> git config --global --add merger.tool kdiff3
+agora informar o caminho do execut·vel >> git config --global --add mergertool.kdff3.path "caminho do execut·vel"
+executar o comando >> git mergertool
+
+-----------------------------------
+
+
