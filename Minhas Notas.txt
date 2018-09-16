@@ -5,7 +5,7 @@ git bash linha de comando com cores
 mesma coisa no cmd
 
 ---------------------------------------
-conceitos teóricos no Git
+conceitos teoricos no Git
 
 <<<<<<< HEAD
 seu projeto fica na sua m�quina local
@@ -23,19 +23,19 @@ várias instâncias de backup
 git é distribuído
 >>>>>>> e54637e7c0702787697a8566eff719f2231636ff
 
-Branch (ramo) - cópia do seu projeto em ramo
+Branch (ramo) - copia do seu projeto em ramo
 mundanças locais sem afetar colaboradores
 
-conceito de distribuição
-Merge - junta as alterações
+conceito de distribuicao
+Merge - junta as alteracoes
 
-configuração do usuário
-já tenho
+configuracao do usuario
+ja tenho
 marlonporfirio
 
 Criando um repositório local > git init
 
-master é um versionamento criado por padrão pelo git 
+master e um versionamento criado por padrao pelo git 
 
 
 Versionmento de arquivos
@@ -131,7 +131,7 @@ geralmente tem uma branch chamada develop(onde as novas funcionalidades do site/
 
 Criando Branch
 comando > git branch + nome da branch
-para muar de branch > comando > git checkout + nome da branch
+para mudar de branch > comando > git checkout + nome da branch
 para enviar para o server > git push
  
 erro > n�o existe nenhum branch no git com esse nome
@@ -181,6 +181,6 @@ apagar do server comando > git push origin --delete nome da branch
 
 
 
-nunca ser� 
+
 
 
