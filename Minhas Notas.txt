@@ -1,0 +1,97 @@
+https://github.com/thiagooliveira88/portaltransparencia.git
+
+
+git bash linha de comando com cores
+mesma coisa no cmd
+
+---------------------------------------
+conceitos teóricos no Git
+
+seu projeto fica na sua máquina local
+seu reposiório fica na máquina 
+copia local na sua máquina
+várias instâncias de backup 
+git é distribuído
+
+Branch (ramo) - cópia do seu projeto em ramo
+mundanças locais sem afetar colaboradores
+
+conceito de distribuição
+Merge - junta as alterações
+
+configuração do usuário
+já tenho
+marlonporfirio
+
+Criando um repositório local > git init
+
+master é um versionamento criado por padrão pelo git 
+
+
+Versionmento de arquivos
+informa ao git que esse arquivo tem que ser rastreado
+comando para ver alteração no arquivo > git status
+untracked files > arquivos não rastreados
+
+comando commit > quando você acaba uma alteração e quer salvar o estado daquel alteração quando você faz um commit e rastreia a alteração
+
+comando git add > adiciona um arquivo para ser rastreado
+
+existem mudanças para ser comitada(Changes to be committed)
+
+comando para inserir todos os arquivos para o git rastrear > git add --all
+
+comando de commit > git commit -m "Algum comentário"
+
+comand para desfazer alterações em vários arquivos ao mesmo tempo > git reset --hard
+
+
+Histórico de alterações 
+
+changes not staged for commit > existem mudanças que não estão preparadas para ser comitada
+
+* após mudanças antes de comitar é necessário fazer um git add 
+comando para ver o histórico de alterações em função da existência vários arquivos > git log
+ 
+para olhar o que foi alterado > git diff e passar como parâmetro um ou mais commits
+
+comando para ver mais a fundo as alterações do histórico > git log --stat
+
+Usando os commits anteriores
+voltar para versão anterior
+comando git checkout + commit
+para voltar a RED > git log depois o comando git checkout + o nome da branch > 
+
+estado RED > uma foto do último commit 
+
+Para limpar a Tela comando > clear
+
+*Como voltar a uma versão anterior de um ARQUIVO comando > git checkout + nome do arquivo
+
+Desfazendo alterações em arquivos não rastreados
+comando > git clean -f (apaga todos os arquivos)
+comando >  antes de apagar mostra uma lista > git clean -n
+comando >  apagar apenas um arquivo > git clean -i
+
+Ignorando Arquivos
+criar o arquivo no Windows com a extensão.gitignore. para arquivos não rastreados
+
+para arquivos já rastreados > esse comando remove todos os arquivos do rastreamento > git rm -r --cached .
+	
+
+*Clonando repositório
+comando git clone + o caminho
+
+You appear to have cloned an empty repository > endereço informado estava errado
+
+*Introdução ao Git Hub
+*Clonando Repositórios e Versões Anteriores
+como enviar as alterações para o servidor(nesse caso GitHub)
+comando git push (envia todos os commits da minha máquina para o servidor)
+
+antes do Git Push
+criar uma pasta no pc onde vai clonar o diretório do site e dar na pasta um git init
+depois usar git clone + url do git hub
+git add nome do arquivo
+git commit -m "Algum comentário"
+
