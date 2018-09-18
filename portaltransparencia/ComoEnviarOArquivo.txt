@@ -1,0 +1,12 @@
+criar uma pasta 
+abrir a o gitbash dentro da pasta
+executar um git init
+git clone https://github.com/thiagooliveira88/portaltransparencia.git
+
+alterar ou criar um arquivo na pasta
+executar git add nomeDoArquivo
+git commit -m "Algum comentario"
+git push (aqui você vai enviar para sua copia do portaltransparencia)
+
+acessar o gitHub e ir na seu portaltransparencia
+ e clica no botão New pull request
