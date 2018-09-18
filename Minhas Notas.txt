@@ -195,5 +195,84 @@ agora informar o caminho do executável >> git config --global --add mergertool.k
 executar o comando >> git mergertool
 
 -----------------------------------
+Resolvendo Conflitos
+no caso de alteração de um arquivo em um branch na máquina e uma alteração direto no arquio no github no mmomento em que você tentar enviar as alterações locais para o servidor vai dar erro(conflito) >> para resolver primeiro é necessário executar um git pull (baixar as alterações do servidor na máquina) abrir o arquivo local e comparar com o do servidor >> ir no arquivo local e deixar a versão que será usada e salvar o arquivo retornar ao GitBash e comandar git status
++ git add --all + git commit -m "comentátios" + git push(envia para o servidor)
+
+
+-----------------------
+*Ferrametas gráficas para resolução de Conflitos
+KDiff3 - Home
+configurando o KDIFF no git como ferramenta de resolução de conflitos
+comando no gitbash >>> git config --global --add merger.tool kdiff3
+agora informar o caminho do executável >> git config --global --add mergertool.kdff3.path "caminho do executável"
+executar o comando >> git mergertool
+
+-----------------------------------
+*Pull Request
+sugestao de codigo para uma branch para alguem revisar e analisar se aprova ou nao
+
+fazer alguma alteracao no arquivo Minhas Notas.txt
+fazer o commit e enviar para o servidor (git add + git commit -m "" + git push)
+
+ir ao githube e acessar a aba pull request 
+clicar e New pull request
+escolher a brand a qual deseja enviar as mudanças
+-------------------------------
+*TAG - marcacao em um commit especifico que voce marcou
+comando para criar uma tag >  git tag + nome da tag (cria uma tag local)
+para enviar ao servidor >> git push origin --tags
+esse processo pega o último commit e cria uma tag
+
+criando uma tag de commits anteriores
+git tag nomeDaTag anterior + numero do commit
+
+como apagar a tag local
+git tag -d + nomeDatag
+
+apagando a Tag no servidor
+git push orirgin --delete + nomeDatag
+
+Como usar a Tag
+
+
+*Stash
+consultar um codigo em outra branch
+comando >> git stash
+o git leva suas alteracoes para uma pilha
+para ver a pilha >> git stash list
+para voltar a branch com a mudancas >> git stash apply
+para remover o git stash da pilha >> git stash drop
+----------------
+*Fetch - uma forma de trazer do servidor somente as alteracoes sem alterar o codigo 
+criar novo repositorio no Git
+comando >  git fetch
+git branch
+git branch -a
+git checkout origin/master/
+ fazer um merger(conceito sempre traz uma branch para nossa corrente)
+git merge
+
+----------------------------------
+*Desfazendo commits ANTES DE ENVAR AO SERVIDOR
+comando >> git reset HEAD~1
+desfazer todas as ateracoes 
+git reset --hard HEAD~1
+
+----------------------------
+*Git Alias - alterar o nome do comando que voce usa para uma descricao maior ou menor
+comando >> git config --global alias.abreviacaoUsada + nome normal
+
+como remover
+git config --global --unset alias.abreviacaoUsada
+
+lista de alias configurados
+git config --get-regexp alias
+
+
+------------------------------
+Ferramentas Gráficas(visuais) para o Git
+SourceTree
+
 
 
