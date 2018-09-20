@@ -1,4 +1,0 @@
-Após ter Forkado um projeto ele com certeza vai sofrer alterções de outros colaboradores, dessa forma é necessário atualizar seu diretório local com a mudanças
-Antes de atualizar é necessário pelo menos uma vez configurar o Remote
-executar o comando git remote -v
-executar o comando git remote add upstream + link do Fork original 
